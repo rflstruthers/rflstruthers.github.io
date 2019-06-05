@@ -1,2 +1,0 @@
-# rflstruthers.github.io
-Portfolio
