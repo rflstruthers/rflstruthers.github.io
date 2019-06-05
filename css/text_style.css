@@ -1,0 +1,51 @@
+body{
+    background-color: white;
+}
+
+h1{
+    text-align: center;
+    border-top: .1px solid black;
+}
+
+/*NAV*/
+.navbar{
+    background-color: rgb(67, 158, 194);
+    position: top;
+}
+
+.navbar-brand{
+    font-size: 30px;
+}
+
+/*HOME*/
+#home{
+    background-color: white;
+}
+
+.card{
+    margin-top: 50px; 
+    background-color: white;
+}
+
+/*SKILLS*/
+#skills{
+    margin-top: 100px;
+    background-color: white;
+}
+
+
+/*EDUCATION & EXPERIENCE*/
+#experience{
+    margin-top: 100px;
+}
+
+/*PORTFOLIO*/
+#portfolio{
+    margin-top: 100px;
+}
+
+
+/*CONTACT*/
+#contact{
+    margin-top: 100px;
+}
