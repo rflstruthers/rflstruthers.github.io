@@ -8,10 +8,7 @@ h1{
 }
 
 /*NAV*/
-.navbar{
-    background-color: rgb(67, 158, 194);
-    position: top;
-}
+
 
 .navbar-brand{
     font-size: 30px;
@@ -23,29 +20,29 @@ h1{
 }
 
 .card{
-    margin-top: 50px; 
+    margin-top: 0px; 
     background-color: white;
 }
 
 /*SKILLS*/
 #skills{
-    margin-top: 100px;
+    margin-top: 0px;
     background-color: white;
 }
 
 
 /*EDUCATION & EXPERIENCE*/
 #experience{
-    margin-top: 100px;
+    margin-top: 0px;
 }
 
 /*PORTFOLIO*/
 #portfolio{
-    margin-top: 100px;
+    margin-top: 0px;
 }
 
 
 /*CONTACT*/
 #contact{
-    margin-top: 100px;
+    margin-top: 0px;
 }
