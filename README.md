@@ -1,2 +1,2 @@
 # rflstruthers.github.io
-Portfolio
+This is my HTML and CSS for my Portfolio page.
