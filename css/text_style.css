@@ -16,6 +16,10 @@ p{
     font-size: 30px;
 }
 
+.navbar{
+    opacity: .9;
+}
+
 /*HOME*/
 .card-img{
     height: 350px;
