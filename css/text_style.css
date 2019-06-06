@@ -1,5 +1,5 @@
 body{
-    background-color: white;
+    background-color: rgb(190, 178, 178);
 }
 
 h1{
@@ -7,42 +7,51 @@ h1{
     border-top: .1px solid black;
 }
 
+p{
+    text-align: center;
+}
+
 /*NAV*/
-
-
 .navbar-brand{
     font-size: 30px;
 }
 
 /*HOME*/
-#home{
-    background-color: white;
+.card-img{
+    height: 350px;
+    width: 375px;
 }
 
-.card{
-    margin-top: 0px; 
-    background-color: white;
+.card-text{
+    text-align: left;
 }
 
 /*SKILLS*/
-#skills{
-    margin-top: 0px;
-    background-color: white;
+.card-img-top-skills{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.card{
+    border: none;
+}
+
+.card-text, .card-title{
+    text-align: center;
 }
 
 
 /*EDUCATION & EXPERIENCE*/
-#experience{
-    margin-top: 0px;
-}
 
 /*PORTFOLIO*/
-#portfolio{
-    margin-top: 0px;
+.card-img-top{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
 }
 
 
 /*CONTACT*/
-#contact{
-    margin-top: 0px;
-}

@@ -18,7 +18,7 @@
   <body>
 
     <!-- NAV -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+  <nav class="navbar navbar-expand-lg navbar-light bg-secondary fixed-top w-100">
       <a class="navbar-brand" href="#home">Reilly Struthers</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -45,14 +45,20 @@
 
     <!--HOME-->
     <section id="home">
-      <div class="card bg-light py-5">
+      <div class="card bg-light py-5 w-100">
         <div class="row no-gutters">
           <div class="col-md-5">
+            <br />
+            <br />
             <img src="./images/murph.jpg" class="card-img" alt="">
           </div>
           <div class="col-md-5">
             <div class="card-body">
-              <p class="card-text">Info about myself...</p>
+              <br />
+              <p class="card-text-about">My name is Reilly Struthers. I am an aspiring Software Developer in Portland, OR. I am currently a student at The Tech Academy learning software development, taking courses in Version Control, HTML, CSS, JavaScript, SQL, Visual Studio, Python, C#, and .NET Framework, among other material.</p>
+              <p class="card-text-about">I graduated from the University of Vermont with a degree in Biology and a minor in Chemistry. I took my first job as a Pharmacy Technician at Edge Pharmacy Services in Vermont. I developed many skills including a keen attention to detail, product and process development and implementation, QA/QC best practices,  working on multiple projects at one time, and time management. I rose to a leadership role in the company as the Non-Sterile department head, managing the production of specialized medications.</p>
+              <p class="card-text-about">My girlfriend and I decided it was time to leave Vermont and head out west to Portland, OR. I am very interested in renewable energy technologies and took a job as a Solar Installer at Imagine Energy. I learned a lot about the industry and was exposed to technologies used in energy production. I became very interested in those, and other technologies and realized I wanted a career in the technology industry. In my research, I found that The Tech Academy would be my best opportunity to put myself in a position to impact the world through technology.</p>
+              <p class="card-text-about">I am a dedicated and positive person and I am very excited to start out in my carrer as a Software Developer!</p>
             </div>
           </div>
         </div>
@@ -63,31 +69,31 @@
         
     <!--SKILLS-->
     <section id="skills">
-      <div class="jumbotron jumbotron-fluid bg-light m-0">
+      <div class="jumbotron jumbotron-fluid bg-light m-0 w-100">
         <div class="container">
           <h1 class="display-4">Technical Skills</h1>
         </div>
       </div>
-      <div class="card-deck bg-light">
+      <div class="card-deck bg-light w-100 m-0">
         <div class="card bg-light">
-          <img src="./images/htmlcss.png" class="card-img-top" alt="...">
+          <img src="./images/web.png" class="card-img-top-skills" alt="...">
           <div class="card-body">
             <h5 class="card-title">Web Development</h5>
             <p class="card-text">HTML 5, CSS 3, Bootstrap...</p>
           </div>
         </div>
         <div class="card bg-light">
-          <img src="..." class="card-img-top" alt="...">
+          <img src="./images/github.png" class="card-img-top-skills" alt="...">
           <div class="card-body">
             <h5 class="card-title">Version Control</h5>
             <p class="card-text">GitHub, Git Bash</p>
           </div>
         </div>
         <div class="card bg-light">
-          <img src="..." class="card-img-top" alt="...">
+          <img src="./images/brain.png" class="card-img-top-skills" alt="...">
           <div class="card-body">
-            <h5 class="card-title">More...</h5>
-            <p class="card-text">I am still learning...</p>
+            <h5 class="card-title">Much more...</h5>
+            <p class="card-text">I am continually striving to learn new skills.</p>
           </div>
         </div>
       </div>
@@ -97,15 +103,16 @@
 
     <!--EDUCATION & EXPERIENCE-->
     <section id="experience">
-      <div class="jumbotron jumbotron-fluid bg-light m-0">
+      <div class="jumbotron jumbotron-fluid bg-light m-0 w-100">
         <div class="container">
           <h1 class="display-4">Education & Experience</h1>
+          <p>A summary of my education and work experience.</p>
         </div>
       <ul class="list-group list-group-flush light py-5">
-        <li class="list-group-item bg-light">UVM</li>
-        <li class="list-group-item bg-light">Edge Pharmacy Services</li>
-        <li class="list-group-item bg-light">Imagine Energy</li>
-        <li class="list-group-item bg-light">The Tech Academy</li>
+        <li class="list-group-item bg-light">Bachelors Degree in Biology from The University of Vermont, graduated 2014.</li>
+        <li class="list-group-item bg-light">Department Head and Pharmacy Technician at Edge Pharmacy Services in Colchester, VT from 2014 to 2017.</li>
+        <li class="list-group-item bg-light">Solar Installer at Imagine Energy in Portland, OR from 2018 to 2019.</li>
+        <li class="list-group-item bg-light">Software Development Student at The Tech Academy in Portland, OR from 2019 to present.</li>
       </ul>
     </section>
     <!--END EDUCATION & EXPERIENCE-->
@@ -113,9 +120,14 @@
 
     <!--PORTFOLIO-->
     <section id="portfolio">
-        <div class="jumbotron jumbotron-fluid bg-light m-0">
+        <div class="jumbotron jumbotron-fluid bg-light m-0 w-100">
             <div class="container">
               <h1 class="display-4">Portfolio</h1>
+              <p>A sampling of my development projects.</p>
+              <br />
+              <img src="./images/edit.png" class="card-img-top" alt="">
+              <br />
+              <p>More to come...</p>
             </div>
           </div>
     </section>
@@ -124,15 +136,16 @@
 
     <!--CONTACT-->
     <section id="contact">
-      <div class="jumbotron jumbotron-fluid bg-light m-0">
+      <div class="jumbotron jumbotron-fluid bg-light m-0 w-100">
         <div class="container">
           <h1 class="display-4">Contact</h1>
+          <p>Connect with me at any of the following!</p>
         </div>
       <ul class="list-group list-group-horizontal py-5">
-        <li class="list-group-item bg-light">LinkedIn</li>
-        <li class="list-group-item bg-light">Email</li>
-        <li class="list-group-item bg-light">Phone</li>
-        <li class="list-group-item bg-light">GitHub</li>
+        <li class="list-group-item bg-light"><a href="https://www.linkedin.com/in/reilly-struthers/" target="_blank" class="links">LinkedIn</a></li>
+        <li class="list-group-item bg-light">Email:    rflstruthers@gmail.com</li>
+        <li class="list-group-item bg-light">Phone:    802-451-6026</li>
+        <li class="list-group-item bg-light"><a href="https://github.com/rflstruthers" target="_blank" class="links">GitHub</a></li>
       </ul>
     </section>
     <!--END CONTACT-->
@@ -143,7 +156,7 @@
 
 
 
-
+    <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 		    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 		    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
