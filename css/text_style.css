@@ -38,9 +38,11 @@ p{
     border: none;
 }
 
-.card-text, .card-title{
+.card-title{
     text-align: center;
 }
+
+
 
 
 /*EDUCATION & EXPERIENCE*/
