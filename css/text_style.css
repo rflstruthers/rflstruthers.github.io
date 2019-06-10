@@ -4,7 +4,7 @@ body{
 
 h1{
     text-align: center;
-    border-top: .1px solid black;
+    border-top: .1px solid rgb(0, 0, 54);
 }
 
 p{
@@ -14,21 +14,47 @@ p{
 /*NAV*/
 .navbar-brand{
     font-size: 30px;
+    color: rgb(228, 149, 4)
 }
 
 .navbar{
     opacity: .9;
+    background-color: rgb(0, 0, 54);
+}
+
+.nav-link{
+    color: whitesmoke;
+    text-decoration: none;
 }
 
 /*HOME*/
-.card-img{
-    height: 350px;
-    width: 375px;
+#home{
+    background: url(../images/snow.jpg) no-repeat 50% 50%;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    display: block;
+    height: auto;
+    padding-top: 200px;
+    padding-bottom: 500px;
+    color: #fff;
 }
 
-.card-text-about{
+.text-box{
+    border-radius: 8px;
+    background-color: rgb(0, 0, 54);
+    color: whitesmoke;
+    opacity: .9;
+    margin: 0 15px;
+    padding: 2%;
+    font-size: 18px;
     text-align: left;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
 
 /*SKILLS*/
 .card-img-top-skills{
@@ -57,6 +83,11 @@ p{
     margin-left: auto;
     margin-right: auto;
     width: 10%;
+}
+
+.card-text-about{
+    text-align: left;
+    padding-left: 2%;
 }
 
 
