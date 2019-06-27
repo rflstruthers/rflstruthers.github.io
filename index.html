@@ -10,6 +10,10 @@
     
     <!--MY CSS-->
     <link rel="stylesheet" href="./css/text_style.css">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./mfizz/font-mfizz.css">
 	  
 
     <title>Reilly S</title>
@@ -21,8 +25,7 @@
   <nav class="navbar navbar-expand-lg fixed-top w-100">
       <a class="navbar-brand" href="#home">Reilly Struthers</a>
       <button class="navbar-toggler navbar-dark" type="button" data-toggle="dropdown" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon">
-        </span>
+        <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
@@ -47,7 +50,13 @@
     <!--HOME-->
     <section id="home">
 				<div class="text-box">
-					<span class="head-main">My name is Reilly Struthers. I am an aspiring Software Developer in Portland, OR. I am currently a student at The Tech Academy learning software development, taking courses in Version Control, HTML, CSS, JavaScript, SQL, Visual Studio, Python, C#, and .NET Framework, among other material. I am dedicated and hard working and I am very excited to start out in my career as a Software Developer!</span>
+					<span class="head-main">
+            My name is Reilly Struthers. I am an aspiring Software Developer in Portland, OR. 
+            I am currently a student at The Tech Academy learning software development, taking 
+            courses in Version Control, HTML, CSS, JavaScript, SQL, Visual Studio, Python, C#, 
+            and .NET Framework, among other material. I am dedicated and hard working and I am
+             very excited to start out in my career as a Software Developer!
+          </span>
 				</div>  
     </section>       
     <!--END HOME-->
@@ -67,7 +76,13 @@
           <img src="./images/web.png" class="card-img-top-skills" alt="...">
           <div class="card-body">
             <!--button that makes modal form pop up-->
-            <button type="button" class="btn btn-light "  data-toggle="modal" data-target="#web-dev">Web Development</button> 
+            <button type="button" class="btn btn-light"  data-toggle="modal" data-target="#web-dev">Web Development<br>
+              <span class="button-icon">
+                <i class="fa fa-html5" style="font-size:48px;"></i>
+                <i class="fa fa-css3" style="font-size:48px;"></i>
+                <i class="icon-javascript" style="font-size:48px;"></i>
+              </span>
+            </button> 
             <!-- form modal-->
           <div class="modal fade" id="web-dev">
             <div class="modal-dialog" role="document">
@@ -79,7 +94,11 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  <p class="card-text">I have been trained in HTML 5, CSS 3, and JavaScript. Utilizing these languages, I have created dynamic web pages and applications. I have experience leveraging Bootstrap 4, React, and jQuery in my programming. </p>
+                  <p class="card-text">
+                    I have been trained in HTML 5, CSS 3, and JavaScript. Utilizing these languages, 
+                    I have created dynamic web pages and applications. I have experience leveraging Bootstrap 4, 
+                    React, and jQuery in my programming.
+                  </p>
                 </div>
               </div>
             </div>
@@ -96,7 +115,12 @@
           <img src="./images/github.png" class="card-img-top-skills" alt="...">
           <div class="card-body">
             <!--button that makes modal form pop up-->
-            <button type="button" class="btn btn-light"  data-toggle="modal" data-target="#version-control">Version Control</button>
+            <button type="button" class="btn btn-light"  data-toggle="modal" data-target="#version-control">Version Control<br>
+              <span class="button-icon">
+                  <i class="fa fa-github-square" style="font-size:48px;"></i>
+                  <i class="icon-git" style="font-size:48px;"></i>
+                </span>
+            </button>
             <!-- form modal-->
           <div class="modal fade" id="version-control">
             <div class="modal-dialog" role="document">
@@ -108,7 +132,9 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  <p class="card-text">I have experience using the GitHub web application, the GitHub desktop application as well using the Git Bash console.</p>
+                  <p class="card-text">
+                    I have experience using the GitHub web application, the GitHub desktop application as well using the Git Bash console.
+                  </p>
                 </div>
               </div>
             </div>
@@ -120,24 +146,31 @@
           </div>
         </div>
 
-        <!--MUCH MORE-->
+        <!--DATABASE-->
         <div class="card bg-light">
-          <img src="./images/brain.png" class="card-img-top-skills" alt="...">
+          <img src="./images/database.png" class="card-img-top-skills" alt="...">
           <div class="card-body">
             <!-- much more button makes modal pop up-->
-            <button type="button" class="btn btn-light"  data-toggle="modal" data-target="#more">Much More...</button>
+            <button type="button" class="btn btn-light"  data-toggle="modal" data-target="#more">Database<br>
+              <span class="button-icon">
+                  <i class="icon-mssql" style="font-size:48px;"></i>
+                </span>
+            </button>
             <!-- form modal-->
           <div class="modal fade" id="more">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header bg-light">
-                  <h5 class="modal-title">Much More...</h5>
+                  <h5 class="modal-title">Database</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
                 <div class="modal-body">
-                  <p class="card-text">I am continually striving to learn new skills.</p>
+                  <p class="card-text">
+                      I have experience using SQL and Microsoft SQL Server to create and administer relational databases. 
+                      I am skilled at writing effective and efficient queries.  
+                  </p>
                 </div>
               </div>
             </div>
