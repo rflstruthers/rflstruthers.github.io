@@ -32,7 +32,7 @@ TOP NAV
   
   /* Add an active class to highlight the current page */
   .topnav a.active {
-    background: rgba(0, 104, 35, .9);
+    background: rgb(0, 104, 35);
     color: white;
   }
   
@@ -78,17 +78,24 @@ Body and all
 }
 
 body{
-    background: url(../images/background4.jpg);
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    font-family: Verdana, sans-serif; 
-    margin:0;
+    font-family: Verdana, sans-serif;
 }  
+
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url(../images/background4.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 .title-container {
     border-top: 1px solid #bbb;
