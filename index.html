@@ -18,7 +18,7 @@
 
 <body>
     <!-- NAV -->
-    <section id="nav">
+    <div id="nav">
         <div class="topnav" id="myTopnav">
             <a href="#home" class="active" onclick="hideDropdown()">Reilly Struthers</a>
             <a href="#skills" onclick="hideDropdown()">Skills</a>
@@ -29,11 +29,11 @@
                 <i class="fa fa-bars"></i>
             </a>
         </div>
-    </section>
+    </div>
     <!-- END NAV-->
 
     <!--HOME-->
-    <section id="home" onclick="hideDropdown()">
+    <div id="home" onclick="hideDropdown()">
         <div class="home-container">
             <p>
                 My name is Reilly Struthers. I am an aspiring Software Developer in Portland, OR. 
@@ -43,11 +43,11 @@
                 very excited to start out in my career as a Software Developer!
             </p>
         </div>
-    </section>
+    </div>
     <!--END HOME-->
 
     <!--SKILLS-->
-    <section id="skills" onclick="hideDropdown()">
+    <div id="skills" onclick="hideDropdown()">
         <br />
         <br />
         <br />
@@ -57,7 +57,7 @@
         <div class="slideshow-container">
             <div class="mySlides fade">
                 <div class="numbertext">1 / 5</div>
-                <div class="img-container" id="myBtn" data-modal="modal-one">
+                <div class="img-container" data-modal="modal-one">
                     <img src="./images/web.png" alt="...">
                     <span class="button-icon">
                         <i class="fa fa-html5" style="font-size:48px;"></i>
@@ -70,7 +70,7 @@
             
             <div class="mySlides fade">
                 <div class="numbertext">2 / 5</div>
-                <div class="img-container" id="myBtn" data-modal="modal-two">
+                <div class="img-container" data-modal="modal-two">
                     <img src="./images/database.png" alt="...">
                     <span class="button-icon">
                         <i class="icon-mssql" style="font-size:48px;"></i>
@@ -81,10 +81,10 @@
             
             <div class="mySlides fade">
                 <div class="numbertext">3 / 5</div>
-                <div class="img-container" id="myBtn" data-modal="modal-three">
+                <div class="img-container" data-modal="modal-three">
                     <img src="./images/web.png" alt="...">
                     <span class="button-icon">
-                        <i class="icon-python"style="font-size:48px;"></i>
+                        <i class="icon-python" style="font-size:48px;"></i>
                     </span>
                     <div class="text">Python</div>
                 </div>
@@ -92,7 +92,7 @@
 
             <div class="mySlides fade">
                 <div class="numbertext">4 / 5</div>
-                <div class="img-container" id="myBtn" data-modal="modal-four">
+                <div class="img-container" data-modal="modal-four">
                     <img src="./images/github.png" alt="...">
                     <span class="button-icon">
                         <i class="fa fa-github-square" style="font-size:48px;"></i>
@@ -104,10 +104,10 @@
 
             <div class="mySlides fade">
                 <div class="numbertext">5 / 5</div>
-                <div class="img-container" id="myBtn" data-modal="modal-five">
+                <div class="img-container" data-modal="modal-five">
                     <img src="./images/edit.png" alt="...">
                     <span class="button-icon">
-                        <i class="icon-csharp"style="font-size:48px;"></i>
+                        <i class="icon-csharp" style="font-size:48px;"></i>
                     </span>
                     <div class="text">More to come...</div>
                 </div>
@@ -190,11 +190,11 @@
         <br />
         <br />
         <br />
-    </section>
+    </div>
     <!--END SKILLS-->
 
     <!--PORTFOLIO-->
-    <section id="portfolio" onclick="hideDropdown()">
+    <div id="portfolio" onclick="hideDropdown()">
         <br />
         <br />
         <br />
@@ -222,18 +222,18 @@
         <br />
         <br />
         <br />
-    </section>
+    </div>
     <!--END PORTFOLIO-->
 
     <!--EDUCATION & EXPERIENCE-->
-    <section id="experience" onclick="hideDropdown()">
+    <div id="experience" onclick="hideDropdown()">
         <br />
         <br />
         <br />
-        <div class="exp-container">
-            <div class="title-container">
-                <p class="title-text">Education & Experience</p>
-            </div>
+        <div class="title-container">
+            <p class="title-text">Education & Experience</p>
+        </div>
+            <div class="exp-container">
             <ul class="edu-list">
                 <li>Software Developer Bootcamp | The Tech Academy | Portland, OR | May 2019-November 2019</li>
                 <li>Solar Installation Technician | Imagine Energy | Portland, OR | January 2017-May 2019</li>
@@ -266,11 +266,11 @@
         <br />
         <br />
         <br />
-    </section>
+    </div>
     <!--END EDUCATION & EXPERIENCE-->
 
     <!--CONTACT-->
-    <section id="contact" onclick="hideDropdown()">
+    <div id="contact" onclick="hideDropdown()">
         <br />
         <br />
         <br />
@@ -293,14 +293,15 @@
         <br />
         <br />
         <br />
-    </section>
+    </div>
     <!--END CONTACT-->
 
+   <!--JQuery-->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <!--MY JS-->
+   <script src="./js/portfolio.js"></script>
 </body>
 
-    <!--JQuery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!--MY JS-->
-    <script src="./js/portfolio.js"></script>
+ 
 
 </html>

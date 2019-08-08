@@ -4,7 +4,7 @@ TOP NAV
 */
 /* Add a black background color to the top navigation */
 .topnav {
-    background: rgba(241, 241, 198, 0.863);
+    background: rgba(255, 255, 255, 0.85);
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -74,7 +74,6 @@ TOP NAV
 Body and all 
 */
 * {
-    box-sizing: border-box;
     overflow-x: hidden;
 }
 
@@ -103,7 +102,7 @@ body{
 .title-text {
     text-align: center;
     font-size: 30px;
-    text-shadow: 1px 1px 10px rgba(255, 255, 226, .6);
+    text-shadow: 2px 2px 15px rgba(255, 255, 255, 0.6);
     padding: 1%;
 }
 
@@ -111,7 +110,7 @@ p {
     font-size: 16px;
     text-align: left;
     color: #000;
-    padding: 0 20% 0 20%;
+    padding: 0 10% 0 10%;
 }
 
   /*
@@ -126,9 +125,9 @@ HOME
 .home-container {
     width: 100%; 
     margin: 0 auto;
-    background: rgba(255, 255, 226, 0.616);
+    background: rgba(255, 255, 255, 0.616);
     padding: 1% 2%;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 1px 16px 0 rgba(0,0,0,0.5);
 }
 
 /*
@@ -148,8 +147,8 @@ SKILLS
     margin-bottom: auto;
 }
 
-#myBtn:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+.img-container:hover {
+    box-shadow: 0 1px 16px 0 rgba(0,0,0,0.5);
     cursor: pointer;
   }
 
@@ -186,8 +185,8 @@ img {
 .slideshow-container {
   width: 100%;
   position: relative;
-  background: rgba(255, 255, 226, 0.616);
-  box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.7), 0px -5px 20px 0px rgba(0,0,0,0.4);
+  background: rgba(255, 255, 225, 0.616);
+  box-shadow: 0px 1px 16px 0px rgba(0,0,0,0.5);
   opacity: 1;
 }
 
@@ -285,10 +284,10 @@ img {
   
   /* Modal Content */
   .modal-content {
-    background: rgba(255, 255, 226, 0.9);
+    background: rgba(255, 255, 225, 0.9);
     margin: auto;
     padding: 1%;
-    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 1px 16px 0 rgba(0,0,0,0.5);
     width: 80%;
     text-align: left;
   }
@@ -333,8 +332,8 @@ PORTFOLIO
     margin-bottom: auto;
     text-align: center;
     word-wrap: normal;
-    background: rgba(255, 255, 226, 0.616);
-    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.5);
+    background: rgba(255, 255, 225, 0.616);
+    box-shadow: 0 1px 16px 0 rgba(0,0,0,0.5);
     transition: 0.3s;
     border-radius: 1px;
     height: 75%;
@@ -343,12 +342,17 @@ PORTFOLIO
 /*
 EDU & EXP
 */
+.edu-list {
+  padding: 1%;
+  line-height: 25px;
+  list-style-type: disc;
+  list-style-position: inside;
+}
 .exp-container {
     width: 100%; 
-    margin: 0 auto;
-    background: rgba(255, 255, 226, 0.616);
+    background: rgba(255, 255, 225, 0.616);
     padding: 1%;
-    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.7), 0px -5px 20px 0px rgba(0,0,0,0.4);
+    box-shadow: 0px 1px 16px 0px rgba(0,0,0,0.5);
 }
 
 /*
@@ -356,8 +360,8 @@ CONTACT
 */
 .contact-list {
     padding: 5%;
-    background: rgba(255, 255, 226, 0.616);
-    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.7), 0px -5px 20px 0px rgba(0,0,0,0.4) inset;
+    background: rgba(255, 255, 225, 0.616);
+    box-shadow: 0px 1px 16px 0px rgba(0,0,0,0.5);
     line-height: 25px;
 }
 
