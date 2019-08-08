@@ -34,6 +34,7 @@ TOP NAV
   .topnav a.active {
     background: rgb(0, 104, 35);
     color: white;
+    font-size: 25px;
   }
   
   /* Hide the link that should open and close the topnav on small screens */
@@ -78,7 +79,8 @@ Body and all
 }
 
 body{
-    font-family: Verdana, sans-serif;
+  font-family: 'Muli';
+  margin: 0;
 }  
 
 body:before {
@@ -109,6 +111,7 @@ body:before {
     font-size: 30px;
     text-shadow: 2px 2px 15px rgba(255, 255, 255, 0.6);
     padding: 1%;
+    
 }
 
 p {
@@ -129,7 +132,6 @@ HOME
 
 .home-container {
     width: 100%; 
-    margin: 0 auto;
     background: rgba(255, 255, 255, 0.616);
     padding: 1% 2%;
     box-shadow: 0 1px 16px 0 rgba(0,0,0,0.5);
