@@ -1,270 +1,306 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    
     <!--MY CSS-->
     <link rel="stylesheet" href="./css/text_style.css">
 
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./mfizz/font-mfizz.css">
-	  
 
-    <title>Reilly S</title>
-  </head>
 
-  <body>
+    <title>Reilly S 2</title>
+</head>
 
+<body>
     <!-- NAV -->
-  <nav class="navbar navbar-expand-lg fixed-top w-100">
-      <a class="navbar-brand" href="#home">Reilly Struthers</a>
-      <button class="navbar-toggler navbar-dark" type="button" data-toggle="dropdown" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#skills">Skills <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#experience">Experience & Education</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link active" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <section id="nav">
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active" onclick="hideDropdown()">Reilly Struthers</a>
+            <a href="#skills" onclick="hideDropdown()">Skills</a>
+            <a href="#portfolio" onclick="hideDropdown()">Portfolio</a>
+            <a href="#experience" onclick="hideDropdown()">Education & Experience</a>
+            <a href="#contact" onclick="hideDropdown()">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="showDropdown()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </section>
     <!-- END NAV-->
 
-
     <!--HOME-->
-    <section id="home">
-				<div class="text-box">
-					<span class="head-main">
-            My name is Reilly Struthers. I am an aspiring Software Developer in Portland, OR. 
-            I am currently a student at The Tech Academy learning software development, taking 
-            courses in Version Control, HTML, CSS, JavaScript, SQL, Visual Studio, Python, C#, 
-            and .NET Framework, among other material. I am dedicated and hard working and I am
-             very excited to start out in my career as a Software Developer!
-          </span>
-				</div>  
-    </section>       
+    <section id="home" onclick="hideDropdown()">
+        <div class="home-container">
+            <p>
+                My name is Reilly Struthers. I am an aspiring Software Developer in Portland, OR. 
+                I am currently a student at The Tech Academy learning software development, taking 
+                courses in Version Control, HTML, CSS, JavaScript, SQL, Visual Studio, Python, C#, 
+                and .NET Framework, among other material. I am dedicated and hard working and I am
+                very excited to start out in my career as a Software Developer!
+            </p>
+        </div>
+    </section>
     <!--END HOME-->
 
-        
     <!--SKILLS-->
-    <section id="skills">
-      <div class="jumbotron jumbotron-fluid bg-light m-0 w-100">
-        <div class="container">
-          <h1 class="display-4">Technical Skills</h1>
+    <section id="skills" onclick="hideDropdown()">
+        <br />
+        <br />
+        <br />
+        <div class="title-container">
+            <p class="title-text">Skills</p>
         </div>
-      </div>
-
-      <!--WEB DEV-->
-      <div class="card-deck bg-light w-100 m-0">
-        <div class="card bg-light">
-          <img src="./images/web.png" class="card-img-top-skills" alt="...">
-          <div class="card-body">
-            <!--button that makes modal form pop up-->
-            <button type="button" class="btn btn-light"  data-toggle="modal" data-target="#web-dev">Web Development<br>
-              <span class="button-icon">
-                <i class="fa fa-html5" style="font-size:48px;"></i>
-                <i class="fa fa-css3" style="font-size:48px;"></i>
-                <i class="icon-javascript" style="font-size:48px;"></i>
-              </span>
-            </button> 
-            <!-- form modal-->
-          <div class="modal fade" id="web-dev">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header bg-light">
-                  <h5 class="modal-title">Web Development</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 5</div>
+                <div class="img-container" id="myBtn" data-modal="modal-one">
+                    <img src="./images/web.png" alt="...">
+                    <span class="button-icon">
+                        <i class="fa fa-html5" style="font-size:48px;"></i>
+                        <i class="fa fa-css3" style="font-size:48px;"></i>
+                        <i class="icon-javascript" style="font-size:48px;"></i>
+                    </span>
+                    <div class="text">Web Development</div>
                 </div>
-                <div class="modal-body">
-                  <p class="card-text">
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 5</div>
+                <div class="img-container" id="myBtn" data-modal="modal-two">
+                    <img src="./images/database.png" alt="...">
+                    <span class="button-icon">
+                        <i class="icon-mssql" style="font-size:48px;"></i>
+                    </span>
+                    <div class="text">Database</div>
+                </div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 5</div>
+                <div class="img-container" id="myBtn" data-modal="modal-three">
+                    <img src="./images/web.png" alt="...">
+                    <span class="button-icon">
+                        <i class="icon-python"style="font-size:48px;"></i>
+                    </span>
+                    <div class="text">Python</div>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <div class="img-container" id="myBtn" data-modal="modal-four">
+                    <img src="./images/github.png" alt="...">
+                    <span class="button-icon">
+                        <i class="fa fa-github-square" style="font-size:48px;"></i>
+                        <i class="icon-git" style="font-size:48px;"></i>
+                    </span>
+                    <div class="text">Version Control</div>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <div class="img-container" id="myBtn" data-modal="modal-five">
+                    <img src="./images/edit.png" alt="...">
+                    <span class="button-icon">
+                        <i class="icon-csharp"style="font-size:48px;"></i>
+                    </span>
+                    <div class="text">More to come...</div>
+                </div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    
+        </div>
+            <br>
+                    
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span> 
+        </div>
+        
+        <!-- The Modal -->
+        <div id="modal-one" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Web Development</h3>
+                <p>
                     I have been trained in HTML 5, CSS 3, and JavaScript. Utilizing these languages, 
                     I have created dynamic web pages and applications. I have experience leveraging Bootstrap 4, 
                     React, and jQuery in my programming.
-                  </p>
-                </div>
-              </div>
+                </p>
             </div>
-          </div>
-            <br />
-            <br />
-            <br />
-            <br />
-          </div>
         </div>
 
-          <!--VERSION CONTROL-->
-        <div class="card bg-light">
-          <img src="./images/github.png" class="card-img-top-skills" alt="...">
-          <div class="card-body">
-            <!--button that makes modal form pop up-->
-            <button type="button" class="btn btn-light"  data-toggle="modal" data-target="#version-control">Version Control<br>
-              <span class="button-icon">
-                  <i class="fa fa-github-square" style="font-size:48px;"></i>
-                  <i class="icon-git" style="font-size:48px;"></i>
-                </span>
-            </button>
-            <!-- form modal-->
-          <div class="modal fade" id="version-control">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header bg-light">
-                  <h5 class="modal-title">Version Control</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <p class="card-text">
-                    I have experience using the GitHub web application, the GitHub desktop application as well using the Git Bash console.
-                  </p>
-                </div>
-              </div>
+        <div id="modal-two" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Database</h3>
+                <p> 
+                    I have experience using SQL and Microsoft SQL Server to create and administer relational databases. 
+                    I am skilled at writing effective and efficient queries.
+                </p>
             </div>
-          </div>   
-            <br />
-            <br />
-            <br />
-            <br />
-          </div>
         </div>
-
-        <!--DATABASE-->
-        <div class="card bg-light">
-          <img src="./images/database.png" class="card-img-top-skills" alt="...">
-          <div class="card-body">
-            <!-- much more button makes modal pop up-->
-            <button type="button" class="btn btn-light"  data-toggle="modal" data-target="#more">Database<br>
-              <span class="button-icon">
-                  <i class="icon-mssql" style="font-size:48px;"></i>
-                </span>
-            </button>
-            <!-- form modal-->
-          <div class="modal fade" id="more">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header bg-light">
-                  <h5 class="modal-title">Database</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <p class="card-text">
-                      I have experience using SQL and Microsoft SQL Server to create and administer relational databases. 
-                      I am skilled at writing effective and efficient queries.  
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-            <br />
-            <br />
-            <br />
-            <br />
-          </div>
-        </div>
-      </div>
-    </section>
-
     
+        <div id="modal-three" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Python</h3>
+                <p>
+                    Experience writing scripts in Python, developing dynamic applications acessing databases and displaying UI, 
+                    experience leveraging the Django framework to create powerful web applications.
+                </p>
+            </div>
+        </div>
+
+        <div id="modal-four" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Version Control</h3>
+                <p>
+                    I have experience using the GitHub web application, 
+                    the GitHub desktop application as well using the Git Bash console.
+                </p>
+            </div>
+        </div>
+
+        <div id="modal-five" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>More...</h3>
+                <p>
+                    I am always learning new skills.
+                </p>
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+    </section>
     <!--END SKILLS-->
 
-
-    <!--EDUCATION & EXPERIENCE-->
-    <section id="experience">
-      <div class="jumbotron jumbotron-fluid bg-light m-0 w-100">
-        <div class="container">
-          <h1 class="display-4">Education & Experience</h1>
-          <p>A summary of my education and work experience.</p>
-        </div>
-      <ul class="list-group list-group-flush light py-5">
-        <li class="list-group-item bg-light">Bachelors Degree in Biology from The University of Vermont, graduated 2014.</li>
-        <li class="list-group-item bg-light">Department Head and Pharmacy Technician at Edge Pharmacy Services in Colchester, VT from 2014 to 2017.</li>
-        <li class="list-group-item bg-light">Solar Installer at Imagine Energy in Portland, OR from 2018 to 2019.</li>
-        <li class="list-group-item bg-light">Software Development Student at The Tech Academy in Portland, OR from 2019 to present.</li>
-        <br />
-        <br />
-        <p class="card-text-about">I graduated from the University of Vermont with a degree in Biology and a minor in Chemistry. I took my first job as a Pharmacy Technician at Edge Pharmacy Services in Vermont. I developed many skills including a keen attention to detail, product and process development and implementation, QA/QC best practices, working on multiple projects at one time, and time management. I rose to a leadership role in the company as the Non-Sterile department head, managing the production of specialized medications.</p>
-        <p class="card-text-about">My girlfriend and I decided it was time to leave Vermont and head out west to Portland, OR. I am very interested in renewable energy technologies and took a job as a Solar Installer at Imagine Energy. Solar installation is a very team oriented work environment and I gained many valuable skills such as effective communication, communication under pressure, and collaborative problem solving. Through my work, I learned a lot about the industry and was exposed to technologies used in energy production. I became very interested in those, and other technologies and realized I wanted a career in the technology industry.</p>
-        <p class="card-text-about">I found that The Tech Academy would be my best opportunity to put myself in a position to impact the world through technology. As an aspiring Software Developer, I am eager to learn new skills and contribute effectively to any project I am a part of.</p>
-        <br />
-      </ul>
-    </section>
-    <!--END EDUCATION & EXPERIENCE-->
-
-
     <!--PORTFOLIO-->
-    <section id="portfolio">
-        <div class="jumbotron jumbotron-fluid bg-light m-0 w-100">
+    <section id="portfolio" onclick="hideDropdown()">
+        <br />
+        <br />
+        <br />
+        <div class="title-container">
+            <p class="title-text">Portfolio</p>
+        </div>
+        <div class="flex-card">
+            <br />
             <div class="container">
-              <h1 class="display-4">Portfolio</h1>
-              <p>A sampling of my development projects.</p>
-              <br />
-              <img src="./images/edit.png" class="card-img-top" alt="">
-              <br />
-              <p>More to come...</p>
+                <img src="./images/edit.png" alt="...">
+                <h4>Projects to come...</h4> 
+                <p>Project description</p> 
+            </div>
+            <div class="container">
+                <img src="./images/edit.png" alt="...">
+                <h4>Projects to come...</h4> 
+                <p>Project description</p> 
             </div>
             <br />
             <br />
-            <br />
-          </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
     </section>
     <!--END PORTFOLIO-->
 
+    <!--EDUCATION & EXPERIENCE-->
+    <section id="experience" onclick="hideDropdown()">
+        <br />
+        <br />
+        <br />
+        <div class="exp-container">
+            <div class="title-container">
+                <p class="title-text">Education & Experience</p>
+            </div>
+            <ul class="edu-list">
+                <li>Software Developer Bootcamp | The Tech Academy | Portland, OR | May 2019-November 2019</li>
+                <li>Solar Installation Technician | Imagine Energy | Portland, OR | January 2017-May 2019</li>
+                <li>Department Head & Pharmacy Technician | Edge Pharmacy Services | Colchester, VT | September 2014-November 2017</li>
+                <li>B.A. in Biology | The University of Vermont | Burlington, VT | August 2010-May 2010</li>
+            </ul>
+            <br />
+            <br />
+            <div class="about-container">
+                <p>
+                    A little about me:<br /><br />
+                    I graduated from the University of Vermont with a degree in Biology and a minor in Chemistry. 
+                    I took my first job as a Pharmacy Technician at Edge Pharmacy Services in Vermont. 
+                    I developed many skills including a keen attention to detail, product and process development and implementation, 
+                    QA/QC best practices, working on multiple projects at one time, and time management. 
+                    I rose to a leadership role in the company as the Non-Sterile department head, 
+                    managing the production of specialized medications.
+                    My girlfriend and I decided it was time to leave Vermont and head out west to Portland, OR. 
+                    I am very interested in renewable energy technologies and took a job as a Solar Installer at Imagine Energy. 
+                    Solar installation is a very team oriented work environment and I gained many valuable skills such as effective communication, 
+                    communication under pressure, and collaborative problem solving. Through my work, I learned a lot about the industry 
+                    and was exposed to technologies used in energy production. I became very interested in those, and other technologies and realized 
+                    I wanted a career in the technology industry.
+                    I found that The Tech Academy would be my best opportunity to put myself in a position to impact the world through technology. 
+                    As an aspiring Software Developer, I am eager to learn new skills and contribute effectively to 
+                    any project I am a part of.
+                </p>
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+    </section>
+    <!--END EDUCATION & EXPERIENCE-->
 
     <!--CONTACT-->
-    <section id="contact">
-      <div class="jumbotron jumbotron-fluid bg-light m-0 w-100">
-        <div class="container">
-          <h1 class="display-4">Contact</h1>
-          <p>Connect with me at any of the following!</p>
+    <section id="contact" onclick="hideDropdown()">
+        <br />
+        <br />
+        <br />
+        <div class="title-container">
+            <p class="title-text">Contact</p>
         </div>
-      <ul class="list-group list-group-horizontal py-5">
-        <li class="list-group-item bg-light"><a href="https://www.linkedin.com/in/reilly-struthers/" target="_blank" class="links">LinkedIn</a></li>
-        <li class="list-group-item bg-light">Email:    rflstruthers@gmail.com</li>
-        <li class="list-group-item bg-light">Phone:    802-451-6026</li>
-        <li class="list-group-item bg-light"><a href="https://github.com/rflstruthers" target="_blank" class="links">GitHub</a></li>
-      </ul>
+        <ul class="contact-list">
+            <li>Email: rflstruthers@gmail.com</li>
+            <li>Phone: 802-451-6026</li>
+            <li><a href="https://www.linkedin.com/in/reilly-struthers/" target="_blank" class="contact-link">LinkedIn</a></li>
+            <li><a href="https://github.com/rflstruthers" target="_blank" class="contact-link">GitHub</a></li>
+        </ul>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
     </section>
     <!--END CONTACT-->
 
+</body>
 
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--MY JS-->
+    <script src="./js/portfolio.js"></script>
 
-
-
-
-
-    <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 		    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 		    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  
-    <script>
-			//javascript for popover window that goes away when user clicks again. 
-			$('.popover-dismiss').popover({
-  			trigger: 'focus'
-				})
-		</script>
-  
-  </body>
 </html>
