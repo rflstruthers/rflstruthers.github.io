@@ -318,7 +318,7 @@ PORTFOLIO
 .flex-card {
     display: flex;
     justify-content: center;
-    padding: 2%;
+    padding: 3%;
   }
   
   .container:hover {
