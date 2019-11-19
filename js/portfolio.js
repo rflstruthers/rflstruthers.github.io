@@ -50,7 +50,7 @@ function showSlides(n) {
 
 
 //Finds button clicked and opens appropriate modal
-var btn = document.getElementsByClassName("img-container");
+var btn = document.querySelectorAll('.img-container, .about-btn');
 for (var i = 0; i < btn.length; i++) {
   var thisBtn = btn[i];
   thisBtn.addEventListener("click", function(){
