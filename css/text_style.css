@@ -78,7 +78,7 @@ Body and all
 }
 
 body{
-  font-family: 'Muli';
+  font-family: 'Playfair Display', serif;
   margin: 0;
 }  
 
@@ -110,7 +110,7 @@ body:before {
     font-size: 30px;
     /* text-shadow: 2px 2px 15px rgba(255, 255, 255, 0.6); */
     padding: 1%;
-    
+    font-family: 'Playfair Display', serif;
 }
 
 p {
@@ -140,6 +140,19 @@ HOME
     padding: 10px 10px;
     text-align: center;
     /* box-shadow: 0 1px 16px 0 rgba(0,0,0,0.5); */
+}
+
+.name {
+  font-family: 'Playfair Display', serif;
+  /* font-style: italic; */
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 0;
+  line-height: 70px;
+  letter-spacing: 5px;
+  height: 100%;
 }
 
 .head {
@@ -189,17 +202,14 @@ SKILLS
 
 .button-icon{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    margin-top: 30px;
     text-align: center;
+    margin-left: 5px;
 }
 
 .text {
     color: #000;
     font-size: 20px;
-    position: relative;
     padding-bottom: 2%;
     width: 100%;
     text-align: center;
@@ -310,7 +320,7 @@ SKILLS
   
   /* Modal Content */
   .modal-content {
-    background: rgba(255, 255, 225, 0.9);
+    background: rgba(255, 255, 255, 1);
     margin: auto;
     padding: 1%;
     box-shadow: 0 1px 16px 0 rgba(0,0,0,0.5);
@@ -398,7 +408,7 @@ PORTFOLIO
 EDU & EXP
 */
 #experience {
-  background: rgba(255, 255, 225, 0.9);
+  background: rgb(255, 255, 255);
   padding: 30px 10px 50px 10px;
 }
 
@@ -411,22 +421,53 @@ EDU & EXP
 }
 .exp-container {
     width: 100%; 
-    background: rgba(255, 255, 225, 0.9);
-    padding: 1% 1% 20px 1%;
+    /* padding: 1% 1% 20px 1%; */
     text-align: center;
-    transition: .3s;
-    /* box-shadow: 0px 1px 16px 0px rgba(0,0,0,0.5); */
+    padding-bottom: 20px;
 }
 
-.exp-container:hover {
-  box-shadow: 0 0px 10px 0 rgba(255, 255, 255, 0.527);
-}
-
-#about-btn {
+.about-btn {
   margin-top: 20px;
   /* border: 1px solid; */
   border-radius: 3px;
-  background: rgb(212, 212, 192);
+  background: rgba(212, 212, 192, 1);
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: .5s;
+  box-shadow: 0 2px 6px 0 rgb(240, 239, 239);
+}
+
+.about-btn:hover {
+  background-color: rgb(0, 104, 35);
+  color: white;
+  
+
+  /* box-shadow: 0 1px 16px 0 rgba(0,0,0,0.5); */
+  cursor: pointer;
+}
+
+.bio-text {
+  text-align: center;
+  font-size: 25px;
+  padding: 0;
+  width: 100%;
+  margin: 5px;
+  transition: .5s;
+  font-family: 'Playfair Display', serif;
+}
+
+.bio-text:hover {
+  color: white;
+}
+
+.info_img {
+  height: 25px;
+  width: 25px;
+  margin-right: 5px;
+  margin-bottom: -4px;
+  margin-left: -4px;
+  transition: .5s;
 }
 
 /*
