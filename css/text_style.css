@@ -20,7 +20,7 @@ TOP NAV
     text-align: center;
     padding: 14px 14px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
   }
   
   /* Change the color of links on hover */
@@ -33,7 +33,7 @@ TOP NAV
   .topnav a.active {
     background: rgb(0, 104, 35);
     color: white;
-    font-size: 17px;
+    font-size: 22px;
   }
   
   /* Hide the link that should open and close the topnav on small screens */
@@ -41,19 +41,20 @@ TOP NAV
     display: none;
   }
 
-  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). 
+  /* When the screen is less than 682 pixels wide, hide all links, except for the first one ("Home"). 
      Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 718px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
       display: block;
+      height: 100%;
     }
   }
   
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. 
      This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-  @media screen and (max-width: 630px) {
+  @media screen and (max-width: 718px) {
     .topnav.responsive {
         position: fixed;
     }
@@ -78,7 +79,8 @@ Body and all
 }
 
 body{
-  font-family: 'Playfair Display', serif;
+  font-family: Elena,georgia,serif;
+  /* Elena,georgia,serif; */
   margin: 0;
 }  
 
@@ -107,10 +109,10 @@ body:before {
 
 .title-text {
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     /* text-shadow: 2px 2px 15px rgba(255, 255, 255, 0.6); */
     padding: 1%;
-    font-family: 'Playfair Display', serif;
+    font-family: Elena,georgia,serif;
 }
 
 p {
@@ -143,7 +145,7 @@ HOME
 }
 
 .name {
-  font-family: 'Playfair Display', serif;
+  font-family: Elena,georgia,serif;
   /* font-style: italic; */
   font-size: 50px;
   text-align: center;
@@ -351,13 +353,14 @@ SKILLS
 PORTFOLIO
 */
 #portfolio {
-  background: rgb(212, 212, 192);
+  /* background: rgb(212, 212, 192); */
+  background: rgb(245, 244, 244);
   padding: 30px 10px 50px 0px;
 }
 
 .flex-card {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     /* padding: 5%; */
     flex-wrap: wrap;
     width: 100%;
@@ -376,8 +379,8 @@ PORTFOLIO
     /* box-shadow: 0 1px 16px 0 rgba(0,0,0,0.5); */
     transition: 0.3s;
     border-radius: 1px;
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 300px;
     margin-top: 20px;
   }
 
@@ -387,8 +390,8 @@ PORTFOLIO
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     padding-top: 2%;
   }
     /* @media screen and (min-width: 100px) {
@@ -430,8 +433,9 @@ EDU & EXP
   margin-top: 20px;
   /* border: 1px solid; */
   border-radius: 3px;
-  background: rgba(212, 212, 192, 1);
-  width: 200px;
+  /* background: rgba(212, 212, 192, 1); */
+  border: #053f00 2px solid;
+  width: 210px;
   margin-left: auto;
   margin-right: auto;
   transition: .5s;
@@ -452,9 +456,9 @@ EDU & EXP
   font-size: 25px;
   padding: 0;
   width: 100%;
-  margin: 5px;
+  margin: 5px 5px 5px 2px;
   transition: .5s;
-  font-family: 'Playfair Display', serif;
+  font-family: Elena,georgia,serif;
 }
 
 .bio-text:hover {
@@ -466,7 +470,7 @@ EDU & EXP
   width: 25px;
   margin-right: 5px;
   margin-bottom: -4px;
-  margin-left: -4px;
+  margin-left: -6px;
   transition: .5s;
 }
 
