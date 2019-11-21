@@ -1,2 +1,2 @@
 # rflstruthers.github.io
-This is my HTML and CSS for my Portfolio page.
+This is my HTML, CSS, and JavaScript for my Portfolio web page.
