@@ -21,7 +21,7 @@ TOP NAV
     padding: 14px 14px;
     text-decoration: none;
     font-size: 20px;
-    height: 25px;
+    height: 28px;
   }
   
   /* Change the color of links on hover */
@@ -44,18 +44,18 @@ TOP NAV
 
   /* When the screen is less than 682 pixels wide, hide all links, except for the first one ("Home"). 
      Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 818px) {
+@media screen and (max-width: 890px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
       display: block;
-      height: 25px;
+      height: 28px;
     }
   }
   
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. 
      This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-  @media screen and (max-width: 818px) {
+  @media screen and (max-width: 890px) {
     .topnav.responsive {
         position: fixed;
     }
@@ -81,8 +81,9 @@ Body and all
 }
 
 body{
-  font-family: Elena,georgia,serif;
-  /* Elena,georgia,serif; */
+  /* font-family: Elena,georgia,serif; */
+  font-family: 'Montserrat', sans-serif;
+  
   margin: 0;
 }  
 
@@ -114,7 +115,8 @@ body:before {
     font-size: 40px;
     /* text-shadow: 2px 2px 15px rgba(255, 255, 255, 0.6); */
     padding: 1%;
-    font-family: Elena,georgia,serif;
+    /* font-family: Elena,georgia,serif; */
+    font-family: 'Montserrat', sans-serif;
 }
 
 p {
@@ -147,8 +149,7 @@ HOME
 }
 
 .name {
-  font-family: Elena,georgia,serif;
-  /* font-style: italic; */
+  font-family: 'Alata', sans-serif;
   font-size: 50px;
   text-align: center;
   margin-bottom: 10px;
@@ -433,11 +434,10 @@ EDU & EXP
 
 .about-btn {
   margin-top: 20px;
-  /* border: 1px solid; */
-  border-radius: 3px;
-  /* background: rgba(212, 212, 192, 1); */
-  border: #053f00 2px solid;
-  width: 210px;
+  border-radius: 50px;
+  background: rgb(44, 43, 43);
+  /* border: #053f00 2px solid; */
+  width: 160px;
   margin-left: auto;
   margin-right: auto;
   transition: .5s;
@@ -455,25 +455,21 @@ EDU & EXP
 
 .bio-text {
   text-align: center;
-  font-size: 25px;
-  padding: 0;
-  width: 100%;
-  margin: 5px 5px 5px 2px;
+  vertical-align: center;
+  font-size: 14px;
+  /* padding: 0; */
+  
   transition: .5s;
-  font-family: Elena,georgia,serif;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
 }
 
 .bio-text:hover {
   color: white;
 }
 
-.info_img {
-  height: 25px;
-  width: 25px;
-  margin-right: 5px;
-  margin-bottom: -4px;
-  margin-left: -6px;
-  transition: .5s;
+.chevron {
+  font-size: 25px;
 }
 
 /*
