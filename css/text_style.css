@@ -18,7 +18,7 @@ TOP NAV
   .topnav a {
     float: left;
     display: block;
-    color: #053f00;
+    color: black;
     text-align: center;
     padding: 14px 14px;
     text-decoration: none;
@@ -35,12 +35,17 @@ TOP NAV
   
   /* Add an active class to highlight the current page */
   .topnav a.active {
-    background: rgb(0, 104, 35);
+    background: black;
     color: white;
-    font-size: 22px;
-    width: 168px;
+    font-size: 60px;
+    width: 86px;
+    height: 56px;
     text-align: left;
     transition: .5s;
+    padding: 0;
+    overflow: hidden;
+    font-weight: bold;
+    line-height: 67px;
   }
   
   /* Hide the link that should open and close the topnav on small screens */
@@ -50,7 +55,7 @@ TOP NAV
 
   /* When the screen is less than 890 pixels wide, hide all links, except for the first one ("Home"). 
      Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 780px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
@@ -61,7 +66,7 @@ TOP NAV
   
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. 
      This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-  @media screen and (max-width: 890px) {
+  @media screen and (max-width: 780px) {
     .topnav.responsive {
         position: fixed;
         height: 336px;
@@ -140,9 +145,10 @@ p {
 HOME
 */
 #home {
-  padding-top: 70px;
+  
+  padding-top: 60px;
   padding-bottom: 50px;
-  background: url(../images/background4.jpg) no-repeat center center;
+  background: url(../images/coast.jpeg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -153,7 +159,7 @@ HOME
 .home-container {
     /* width: 100%; 
     background: rgba(255, 255, 255, 0.616); */
-    padding: 10px 10px;
+    padding: 20px 10px;
     text-align: center;
     /* box-shadow: 0 1px 16px 0 rgba(0,0,0,0.5); */
 }
@@ -165,16 +171,22 @@ HOME
   margin-bottom: 10px;
   margin-top: 10px;
   padding: 0;
-  line-height: 70px;
+  line-height: 50px;
   letter-spacing: 5px;
   height: 100%;
+  overflow: hidden;
 }
 
 .head {
     font-size: 20px;
-    margin: 0;
+    margin-bottom: -10px;
     padding: 0;
     text-align: center;
+}
+
+.contact-link-1 {
+  color: black;
+  line-height: 20px;
 }
 
 /*
@@ -234,7 +246,7 @@ SKILLS
 .slideshow-container {
   width: 100%;
   position: relative;
-  background: rgba(255, 255, 225, 0.8);
+  background: rgba(255, 255, 225, 0.7);
   box-shadow: 0px 1px 16px 0px rgba(0,0,0,0.5);
   opacity: 1;
   
@@ -372,12 +384,12 @@ PORTFOLIO
 #portfolio {
   /* background: rgb(212, 212, 192); */
   background: rgb(245, 244, 244);
-  padding: 30px 10px 50px 0px;
+  padding: 30px 0px 50px 0px;
 }
 
 .flex-card {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     /* padding: 5%; */
     flex-wrap: wrap;
     width: 100%;
@@ -385,8 +397,9 @@ PORTFOLIO
   }
   
   .container:hover {
-    box-shadow: 0 0px 10px 0 rgba(255, 255, 255, 0.527);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.527);
     cursor: pointer;
+    z-index: 10;
   }
 
   .container {
@@ -397,39 +410,37 @@ PORTFOLIO
     transition: 0.3s;
     border-radius: 1px;
     height: 250px;
-    width: 300px;
-    margin-top: 20px;
+    width: 450px;
+    margin-top: 0px;
+    position: relative;
+    color: white;
+    overflow: hidden;
   }
 
   .portfolio_img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    width: 150px;
-    height: 150px;
-    padding-top: 2%;
+    width: 100%;
+    height: 100%;
   }
-    /* @media screen and (min-width: 100px) {
-      .card {
-          flex: 0 1 calc(50% - 1em);
-      }
-    }
   
-    @media screen and (min-width: 700px) {
-        .card {
-          flex: 0 1 calc(25% - 1em);
-      }
-    } */
+  .portfolio-text {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    color: black;
+    font-style: italic;
+  }
 
+  #text-white {
+    color: white;
+  }
 
 /*
 EDU & EXP
 */
 #experience {
   background: rgb(255, 255, 255);
-  padding: 30px 10px 50px 10px;
+  padding: 30px 10px 70px 10px;
 }
 
 .edu-list {
@@ -459,7 +470,7 @@ EDU & EXP
 }
 
 .about-btn:hover {
-  background-color: rgb(0, 104, 35);
+  background-color: rgb(167, 167, 167);
   color: white;
   
 
@@ -501,18 +512,33 @@ EDU & EXP
 CONTACT
 */
 #contact {
-  background: rgb(212, 212, 192);
-  padding: 30px 10px 50px 10px;
+  background: black;
+  padding: 0px 10px 0px 10px;
 }
 
 .contact-list {
-    padding: 5%;
-    /* background: rgba(255, 255, 225, 0.616); */
-    /* box-shadow: 0px 1px 16px 0px rgba(0,0,0,0.5); */
     line-height: 25px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10px 10px 20px 10px;
 }
 
 .contact-link {
     text-decoration: none;
-    color: #000;
+    color: rgb(156, 156, 156);
+    margin: 0 5px;
+}
+
+.contact-title-text {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    top: 0;
+    
+}
+
+contact-title-container{
+  margin: 0px;
 }
