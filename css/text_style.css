@@ -402,7 +402,7 @@ PORTFOLIO
 
 .flex-card {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     /* padding: 5%; */
     flex-wrap: wrap;
     width: 100%;
@@ -424,7 +424,7 @@ PORTFOLIO
     border-radius: 1px;
     height: 250px;
     width: 450px;
-    margin-top: 0px;
+    margin: 10px;
     position: relative;
     color: white;
     overflow: hidden;
@@ -439,10 +439,14 @@ PORTFOLIO
   
   .portfolio-text {
     position: absolute;
-    top: -2px;
-    left: -1px;
+    top: 0px;
+    left: 0px;
     color: black;
     font-style: italic;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 22px;
+    margin-bottom: 0px;
   }
 
   #text-white {
