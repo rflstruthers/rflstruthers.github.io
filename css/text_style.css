@@ -501,7 +501,6 @@ EDU & EXP
   vertical-align: center;
   font-size: 14px;
   /* padding: 0; */
-  
   transition: .5s;
   font-family: 'Montserrat', sans-serif;
   color: white;
@@ -554,7 +553,14 @@ CONTACT
     font-size: 40px;
     font-family: 'Montserrat', sans-serif;
     top: 0;
-    
+}
+
+#contact-link-click {
+  color: rgb(204, 204, 204);
+}
+
+#contact-link-click:hover {
+  color: rgb(156, 156, 156);
 }
 
 contact-title-container{
