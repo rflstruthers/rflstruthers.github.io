@@ -530,7 +530,7 @@ EDU & EXP
 CONTACT
 */
 #contact {
-  background: black;
+  background: rgb(44, 43, 43);
   padding: 0px 10px 0px 10px;
 }
 
@@ -543,7 +543,7 @@ CONTACT
 }
 
 .contact-link {
-    text-decoration: none;
+    text-decoration: none!important;
     color: rgb(156, 156, 156);
     margin: 0 5px;
 }
