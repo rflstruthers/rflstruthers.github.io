@@ -56,7 +56,11 @@ for (var i = 0; i < btn.length; i++) {
   thisBtn.addEventListener("click", function(){
     var modal = document.getElementById(this.dataset.modal);
     modal.style.display = "block";
+    
+    // $('#modal-about-content').scrollTop(0);
 }, false);}
+
+
 
 //Close modal
 $(document).ready(function(){
