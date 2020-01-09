@@ -1,16 +1,14 @@
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+var x = document.getElementById("myTopnav");
 function showDropdown() {
-    var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
       x.className += " responsive";
     } else {
       x.className = "topnav";
     }
   }
-
 //Close the dropdown menu if the user clicks outside of it
 function hideDropdown() {
-    var x = document.getElementById("myTopnav");
     if (x.className === "topnav responsive") {
         x.className = "topnav";
       } else {
