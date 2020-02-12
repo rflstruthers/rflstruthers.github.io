@@ -16,35 +16,38 @@ function hideDropdown() {
       }
 }
 
-
-//Skills Slideshow
 var slideIndex = 1;
+var timer = null;
 showSlides(slideIndex);
 
 function plusSlides(n) {
+  clearTimeout(timer);
   showSlides(slideIndex += n);
 }
 
 function currentSlide(n) {
+  clearTimeout(timer);
   showSlides(slideIndex = n);
 }
 
-//changes slide
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
+  if (n==undefined){n = ++slideIndex}
+  if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+      slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";  
+  slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-}
+  timer = setTimeout(showSlides, 5000);
+} 
+
 
 
 //Finds button clicked and opens appropriate modal
@@ -55,6 +58,7 @@ for (var i = 0; i < btn.length; i++) {
     var modal = document.getElementById(this.dataset.modal);
     modal.style.display = "block";
     $('#modal-about-content').scrollTop(0);
+    clearTimeout(timer);
 }, false);}
 
 
@@ -63,5 +67,6 @@ for (var i = 0; i < btn.length; i++) {
 $(document).ready(function(){
     $(".close").click(function(){
       $(".modal").hide();
+      timer = setTimeout(showSlides, 5000);
     });
 });
