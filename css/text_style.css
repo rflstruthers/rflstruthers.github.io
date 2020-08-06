@@ -161,11 +161,17 @@ HOME
   padding-top: 60px;
   padding-bottom: 50px;
   background: url(../images/coast.jpeg) no-repeat center center;
-  -webkit-background-size: cover;
+  /* -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-  
+  background-size: cover; */
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .home-container {
@@ -568,6 +574,6 @@ CONTACT
   color: rgb(156, 156, 156);
 }
 
-contact-title-container{
+.contact-title-container{
   margin: 0px;
 }
