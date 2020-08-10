@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
     <!-- Required meta tags -->
@@ -7,7 +7,7 @@
     <meta name="format-detection" content="telephone=no">
 
     <!--MY CSS-->
-    <link rel="stylesheet" href="./css/index2.css">
+    <link rel="stylesheet" href="./css/index.css">
 
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -86,7 +86,9 @@
         <div class="title-container">
             <p class="title-text">Skills</p>
         </div>
-        <div class="skills-title">Languages:</div>
+        <div class="skills-title-container" id="lng">
+            <div class="skills-title">Languages</div>
+        </div>
         <div class="skills-flex">
             <div class="skills-container">
                 <i class="devicon-csharp-plain colored"></i>
@@ -114,7 +116,9 @@
             </div>
         </div>
         <br/>
-        <div class="skills-title">Frameworks:</div>
+        <div class="skills-title-container">
+            <div class="skills-title">Frameworks</div>
+        </div>
         <div class="skills-flex">
             <div class="skills-container">
                 <i class="devicon-dot-net-plain colored"></i>
@@ -152,21 +156,18 @@
               </div>
             <div class="mySlides">
                 <div class="slide-container">
-                    <img src="./images/automap.png">
+                    <div class="left-container">
+                        <img src="./images/automap.png">
+                        <a href="https://github.com/rflstruthers/AutoMap" class="work-btn" target="_blank">
+                            View Code
+                        </a>
+                    </div>
+                    
                     <ul>
-                        <li><a href="https://github.com/rflstruthers/AutoMap" target="_blank">
-                            View Code</a>
-                        </li>
-                        <br/>
-                        <br/>
                         <li class="list-text">ASP.NET MVC, C#, JavaScript, jQuery, HTML, CSS, Bootstrap.</li>
-                        <br/>
                         <li class="list-text">Used REST web service calls to access JSON data.</li>
-                        <br/>
                         <li class="list-text">Integrated location data with custom map using Google Maps JavaScript API.</li>
-                        <br/>
                         <li class="list-text">Implemented CRUD operations for map areas.</li>
-                        <br/>
                         <li class="list-text">Used HTML, CSS, and Javascript to create elegant and responsive UI/UX.</li>
                     </ul>
                 </div>
@@ -174,62 +175,53 @@
           
             <div class="mySlides">
                 <div class="slide-container">
-                    <img src="./images/weather.jpg">
-                    <ul>
-                        <li><a href="https://github.com/rflstruthers/Django-Project-Weather-App" target="_blank">
+                    <div class="left-container">
+                        <img src="./images/weather.jpg">
+                        <a href="https://github.com/rflstruthers/Django-Project-Weather-App" class="work-btn" target="_blank">
                             View Code</a>
-                        </li>
-                        <br/>
-                        <br/>
+                    </div>
+                    <ul>
                         <li class="list-text">Python, Django, HTML, CSS.</li>
-                        <br/>
                         <li class="list-text">Created a weather forecast application consuming REST APIs.</li>
-                        <br/>
                         <li class="list-text">Designed and implemented responsive user interface.</li>
                     </ul>
                 </div>
             </div>
             <div class="mySlides">
                 <div class="slide-container">
-                    <img src="./images/shopping.png">
-                    <ul>
-                        <li><a href="https://github.com/rflstruthers/ASP.NET-MVC-Back-End-Projects" target="_blank">
+                    <div class="left-container">
+                        <img src="./images/shopping.png">
+                        <a href="https://github.com/rflstruthers/ASP.NET-MVC-Back-End-Projects" class="work-btn" target="_blank">
                             View Code</a>
-                        </li>
-                        <br/>
-                        <br/>
+                    </div>
+                    <ul>
                         <li class="list-text">ASP.NET MVC, C#, Entity Framework, HTML, CSS, Bootstrap.</li>
-                        <br/>
                         <li class="list-text">Developed product management and shopping cart features.</li>
                     </ul>
                 </div>
             </div>
             <div class="mySlides">
                 <div class="slide-container">
-                    <img src="./images/frontend.png">
-                    <ul>
-                        <li><a href="https://github.com/rflstruthers/ASP.NET-MVC-Front-End-Projects" target="_blank">
+                    <div class="left-container">
+                        <img src="./images/frontend.png">
+                        <a href="https://github.com/rflstruthers/ASP.NET-MVC-Front-End-Projects" class="work-btn" target="_blank">
                             View Code</a>
-                        </li>
-                        <br/>
-                        <br/>
+                    </div>
+                    <ul>
                         <li class="list-text">Used HTML, CSS, Javascript, and Bootstrap to create elegant and responsive UI/UX.</li>
-                        <br/>
                         <li class="list-text">Experience developing in React.</li>
                     </ul>
                 </div>
             </div>
             <div class="mySlides">
                 <div class="slide-container">
-                    <img src="./images/backend.jpg">
-                    <ul>
-                        <li><a href="https://github.com/rflstruthers/Django-Project-Back-End" target="_blank">
+                    <div class="left-container">
+                        <img src="./images/backend.jpg">
+                        <a href="https://github.com/rflstruthers/Django-Project-Back-End" class="work-btn" target="_blank">
                             View Code</a>
-                        </li>
-                        <br/>
-                        <br/>
+                    </div>
+                    <ul>
                         <li class="list-text">In an ASP.NET MVC web application, developed database editing capabilities for administrators.</li>
-                        <br/>
                         <li class="list-text">Used Django Form and Model classes to develop review/rating capabilities for a restaurant.</li>
                     </ul>
                 </div>
@@ -287,7 +279,9 @@
 
     <!--ABOUT-->
     <div id="about">
-        <img src="./images/AboutMe.png" class="img-about" alt="Responsive image">
+        <div class="img-container">
+            <img src="./images/profile.jpg" class="img-about" alt="Responsive image">
+        </div>
         <p class="about-text">
 I am a software developer with a passion for learning. I enjoy working on all aspects of a software solution, 
 from data management, API integration, and business logic to creating beautiful and responsive user interfaces. 
@@ -299,7 +293,7 @@ endeavours.
 Having a positive impact on others and creating effective solutions are huge motivators for me. I am a team player 
 who is not afraid to take initiative.
 <br/><br/>
-When I’m not coding, I can be found hiking, camping, biking around town, or reading a good book.
+When I’m not coding, I can be found hiking, camping, biking around town, or cooking up a storm in my kitchen.
         </p>
     </div>
     <!--ABOUT-->
@@ -314,7 +308,7 @@ When I’m not coding, I can be found hiking, camping, biking around town, or re
    <!--JQuery-->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <!--MY JS-->
-   <script src="./js/portfolio.js"></script>
+   <script src="./js/index.js"></script>
 </body>
 
  
